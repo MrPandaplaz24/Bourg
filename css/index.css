@@ -1,35 +1,86 @@
+/* Implement themes for the user to change the page theme */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body{ 
-    font-family: sans-serif;
-    background-color: rgb(48, 48, 48);
+  margin-top: 70px;  
+  font-family: sans-serif;
+  color: whitesmoke;
+  background-color: rgb(48, 48, 48);
 }
 
 header {
-    position: fixed;
+    position: fixed; /* Fixed Element is removed from the document flow and placed relative to the viewport */
     top: 0;
     right: 0;
     left: 0;
-    background-color: #f8f8f8;
+    z-index: 1; /*Identifies z axis position in page 
+    Example z-index=1 will be above item with a z-index=0 
+    only applies to elements with non static positon*/
+    background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
   }
-  h1 {
-    font-size: 30px;
-    margin: 0;
-    display: inline-block;
-  }
 
+  /* Title / Logo */
   header h1{
+    color: black;
     margin: 0;
     display: inline-block;
   }
-
-header a {
+  /* Login / Register button */
+  header a {
     float: right;
     margin-left: 10px;
     background-color: #4CAF50;
     color: #fff;
-    border: none;
+    border-bottom: 3px solid rgb(0, 112, 0);
+    border-right: 2px solid rgb(0, 139, 0);
+
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* contains items on left side of screen
+Home Messages Profile Settings */
+
+.menu{
+  display: block;
+}
+
+.menu ul{
+  position: fixed;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none; 
+  background-color:rgb(48, 48, 48);
+  /* removes bullet point next to lists */
+}
+
+.menu > ul > *{
+  display: grid;
+  place-items: center;
+  /* centers items in box 
+  without this the text will touch top  */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  
+  cursor: pointer;
+  
+  border-radius: 15%;
+
+  background-color: rgb(48, 48, 48);
+}
+
+.menu ul :hover{
+  padding: 10%;
+  background-color: black;
 }
