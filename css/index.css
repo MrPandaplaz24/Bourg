@@ -13,16 +13,18 @@ body{
 }
 
 header {
+    margin-bottom: 70px;
     position: fixed; /* Fixed Element is removed from the document flow and placed relative to the viewport */
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1; /*Identifies z axis position in page 
+    /*z-index: 1; /*Identifies z axis position in page 
     Example z-index=1 will be above item with a z-index=0 
     only applies to elements with non static positon*/
     background-color: #f0f0f0;
     padding: 10px;
     border-bottom: 1px solid #ccc;
+
   }
 
   /* Title / Logo */
@@ -53,6 +55,8 @@ Home Messages Profile Settings */
 }
 
 .menu ul{
+  color:black;
+  margin-top: 20px ;
   position: fixed;
   margin-left: 0px;
   padding-left: 0px;
@@ -67,20 +71,25 @@ Home Messages Profile Settings */
   /* centers items in box 
   without this the text will touch top  */
   padding: 0;
-  margin: 0;
+  margin: 8px;
   margin-bottom: 15px;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   
   cursor: pointer;
   
   border-radius: 15%;
 
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(255, 255, 255);
 }
 
 .menu ul :hover{
-  padding: 10%;
-  background-color: black;
+  margin-left: 20px;
+  background-color: rgb(209, 209, 209);
+}
+
+.menu img{
+  width: 25px;
+  height: 25px;
 }
