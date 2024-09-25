@@ -58,6 +58,7 @@ form{
 }
 /*Submit button and text areas*/
 form input{
+    color:whitesmoke;
     font-family: monospace;
     background-color: rgb(20, 20, 20);
     margin-bottom: 5px;
