@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{ 
+    margin-top: 70px;  
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: rgb(48, 48, 48);
+  }
+  
+  header {
+      margin-bottom: 70px;
+      position: fixed; /* Fixed Element is removed from the document flow and placed relative to the viewport */
+      top: 0;
+      right: 0;
+      left: 0;
+      /*z-index: 1; /*Identifies z axis position in page 
+      Example z-index=1 will be above item with a z-index=0 
+      only applies to elements with non static positon*/
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+  
+    }
+  
+    /* Title / Logo */
+    header h1{
+      color: black;
+      margin: 0;
+      display: inline-block;
+    }
+    /* Login / Register button */
+    header .header-button {
+      float: right;
+      margin-left: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border-bottom: 3px solid rgb(0, 112, 0);
+      border-right: 2px solid rgb(0, 139, 0);
+  
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+
+
+  /*login form input and button*/
+form{
+    color: whitesmoke;
+    display: grid;
+    margin-top: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+/*Submit button and text areas*/
+form input{
+    font-family: monospace;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 5px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto; /*LOOK LOOK I CENTERED THE FUCKING SUBMITT BUTTON YIPPE */
+    padding: 10px;
+    cursor: pointer;
+}
+

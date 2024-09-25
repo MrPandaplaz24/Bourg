@@ -34,7 +34,7 @@ header {
     display: inline-block;
   }
   /* Login / Register button */
-  header a {
+  header .header-button {
     float: right;
     margin-left: 10px;
     background-color: #4CAF50;
