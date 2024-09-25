@@ -5,6 +5,8 @@ Website Blog / Social media
 Todo
 {
     
+    Why is this fuck ass shit purple.
+
     Save login information to a file
     
     Load login information from a file
